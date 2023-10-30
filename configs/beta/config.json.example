@@ -1,0 +1,86 @@
+# !!! ATTENTION!!!
+
+# URL VM Location
+#    A. Legacy
+#           {url}:{port} -> by default will use klopos vm
+#                - type : postgresql -> reference to postgresql
+#               - type : mysql -> reference postgresql 
+#    B. Dynamic
+#           {akunting_url_beta}:{akunting_port_beta} -> will use respective key (akunting_url_beta, akunting_port_beta) in .env, please check .env.example
+#               - ALWAYS use lowercase regardless the case of the .env    
+#               - please coordinate with infra about the given .env on the services
+#               - be careful of the env, staging / prod
+
+
+{
+    "y-axis": 1800,
+    "type" : "mysql",
+    "configs": [
+        {
+            "group_name": "ETL MART Kupon Seq45Min",
+            "state" : "STOPPED",
+            "processor" : {
+                "InvokeHTTP": {
+                        "penaltyDuration": "300 sec",
+                        "yieldDuration": "1 sec",
+                        "bulletinLevel": "WARN",
+                        "schedulingStrategy": "TIMER_DRIVEN",
+                        "run_scheduler": "0 sec",
+                        "executionNode": "ALL",
+                        "concurrentlySchedulableTaskCount": 1,
+                        "client_id": "{client_id}",
+                        "runDurationMillis": 0,
+                        "http_name": "InvokeHTTP API DATAMART SEQ45MIN",
+                        "http_method": "GET",
+                        "remote_url": "{url}:{port}/mart/akunting/akunting-sequence-min?sequence=45&idStore=6449,503749",
+                        "connection_timeout": "20000 secs",
+                        "read_timeout": "20000 secs",
+                        "max_idle_connection": 1,
+                        "idle-timeout": "10 mins",
+                        "pos_x": 0,
+                        "pos_y": 300,
+                        "on" : {
+                            "original" : "LogAttribute",
+                            "retry" : "LogAttribute",
+                            "failure": "LogAttribute",
+                            "response" : "LogAttribute",
+                            "no_retry" : "LogAttribute"
+                        }
+                    }
+                }
+        },
+        {
+            "group_name": "ETL MART Kupon Seq120Min",
+            "state" : "STOPPED",
+            "processor" : {
+                "InvokeHTTP": {
+                        "penaltyDuration": "300 sec",
+                        "yieldDuration": "1 sec",
+                        "bulletinLevel": "WARN",
+                        "schedulingStrategy": "TIMER_DRIVEN",
+                        "run_scheduler": "0 sec",
+                        "executionNode": "ALL",
+                        "concurrentlySchedulableTaskCount": 1,
+                        "client_id": "{client_id}",
+                        "runDurationMillis": 0,
+                        "http_name": "InvokeHTTP API DATAMART SEQ45MIN",
+                        "http_method": "GET",
+                        "remote_url": "{url}:{port}/mart/akunting/akunting-sequence-min?sequence=120&idStore=6449,503749",
+                        "connection_timeout": "20000 secs",
+                        "read_timeout": "20000 secs",
+                        "max_idle_connection": 1,
+                        "idle-timeout": "10 mins",
+                        "pos_x": 0,
+                        "pos_y": 300,
+                        "on" : {
+                            "original" : "LogAttribute",
+                            "retry" : "LogAttribute",
+                            "failure": "LogAttribute",
+                            "response" : "LogAttribute",
+                            "no_retry" : "LogAttribute"
+                        }
+                }
+            }
+        }
+    ]
+}

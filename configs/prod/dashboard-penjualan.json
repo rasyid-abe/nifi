@@ -1,0 +1,303 @@
+{
+    "y-axis": -200,
+    "type": "postgresql",
+    "configs": [
+        {
+            "group_name": "ETL MART Dashboard Seq5Min - Postgres",
+            "state": "STOPPED",
+            "processor": {
+                "InvokeHTTP": {
+                    "penaltyDuration": "300 sec",
+                    "yieldDuration": "1 sec",
+                    "bulletinLevel": "WARN",
+                    "schedulingStrategy": "TIMER_DRIVEN",
+                    "run_scheduler": "0 sec",
+                    "executionNode": "ALL",
+                    "concurrentlySchedulableTaskCount": 1,
+                    "client_id": "{client_id}",
+                    "runDurationMillis": 0,
+                    "http_name": "InvokeHTTP API DATAMART SEQ5MIN",
+                    "http_method": "GET",
+                    "remote_url": "{url}:{port}/mart/sales/dashboard-sequence-min?sequence=5",
+                    "connection_timeout": "20000 secs",
+                    "read_timeout": "20000 secs",
+                    "max_idle_connection": 1,
+                    "idle-timeout": "10 mins",
+                    "pos_x": 0,
+                    "pos_y": 300,
+                    "on": {
+                        "original": "LogAttribute",
+                        "retry": "LogAttribute",
+                        "failure": "LogAttribute",
+                        "response": "LogAttribute",
+                        "no_retry": "LogAttribute"
+                    }
+                }
+            }
+        },
+        {
+            "group_name": "ETL MART Dashboard Seq5Min - Pandas",
+            "state": "STOPPED",
+            "processor": {
+                "InvokeHTTP": {
+                    "penaltyDuration": "300 sec",
+                    "yieldDuration": "1 sec",
+                    "bulletinLevel": "WARN",
+                    "schedulingStrategy": "TIMER_DRIVEN",
+                    "run_scheduler": "0 sec",
+                    "executionNode": "ALL",
+                    "concurrentlySchedulableTaskCount": 1,
+                    "client_id": "{client_id}",
+                    "runDurationMillis": 0,
+                    "http_name": "InvokeHTTP API DATAMART SEQ5MIN",
+                    "http_method": "GET",
+                    "remote_url": "{url}:{port}/mart/sales/dashboard-sequence-min-pandas?sequence=5",
+                    "connection_timeout": "20000 secs",
+                    "read_timeout": "20000 secs",
+                    "max_idle_connection": 1,
+                    "idle-timeout": "10 mins",
+                    "pos_x": 0,
+                    "pos_y": 300,
+                    "on": {
+                        "original": "LogAttribute",
+                        "retry": "LogAttribute",
+                        "failure": "LogAttribute",
+                        "response": "LogAttribute",
+                        "no_retry": "LogAttribute"
+                    }
+                }
+            }
+        },
+        {
+            "group_name": "ETL MART Dashboard Seq45Min - Postgres",
+            "state": "STOPPED",
+            "processor": {
+                "InvokeHTTP": {
+                    "penaltyDuration": "300 sec",
+                    "yieldDuration": "1 sec",
+                    "bulletinLevel": "WARN",
+                    "schedulingStrategy": "TIMER_DRIVEN",
+                    "run_scheduler": "0 sec",
+                    "executionNode": "ALL",
+                    "concurrentlySchedulableTaskCount": 1,
+                    "client_id": "{client_id}",
+                    "runDurationMillis": 0,
+                    "http_name": "InvokeHTTP API DATAMART SEQ5MIN",
+                    "http_method": "GET",
+                    "remote_url": "{url}:{port}/mart/sales/dashboard-sequence-min?sequence=45",
+                    "connection_timeout": "20000 secs",
+                    "read_timeout": "20000 secs",
+                    "max_idle_connection": 1,
+                    "idle-timeout": "10 mins",
+                    "pos_x": 0,
+                    "pos_y": 300,
+                    "on": {
+                        "original": "LogAttribute",
+                        "retry": "LogAttribute",
+                        "failure": "LogAttribute",
+                        "response": "LogAttribute",
+                        "no_retry": "LogAttribute"
+                    }
+                }
+            }
+        },
+        {
+            "group_name": "ETL MART Dashboard Seq45Min - Pandas",
+            "state": "STOPPED",
+            "processor": {
+                "InvokeHTTP": {
+                    "penaltyDuration": "300 sec",
+                    "yieldDuration": "1 sec",
+                    "bulletinLevel": "WARN",
+                    "schedulingStrategy": "TIMER_DRIVEN",
+                    "run_scheduler": "0 sec",
+                    "executionNode": "ALL",
+                    "concurrentlySchedulableTaskCount": 1,
+                    "client_id": "{client_id}",
+                    "runDurationMillis": 0,
+                    "http_name": "InvokeHTTP API DATAMART SEQ5MIN",
+                    "http_method": "GET",
+                    "remote_url": "{url}:{port}/mart/sales/dashboard-sequence-min-pandasS?sequence=45",
+                    "connection_timeout": "20000 secs",
+                    "read_timeout": "20000 secs",
+                    "max_idle_connection": 1,
+                    "idle-timeout": "10 mins",
+                    "pos_x": 0,
+                    "pos_y": 300,
+                    "on": {
+                        "original": "LogAttribute",
+                        "retry": "LogAttribute",
+                        "failure": "LogAttribute",
+                        "response": "LogAttribute",
+                        "no_retry": "LogAttribute"
+                    }
+                }
+            }
+        },
+        {
+            "group_name": "ETL MART Dashboard Seq120Min - Postgres",
+            "state": "STOPPED",
+            "processor": {
+                "InvokeHTTP": {
+                    "penaltyDuration": "300 sec",
+                    "yieldDuration": "1 sec",
+                    "bulletinLevel": "WARN",
+                    "schedulingStrategy": "TIMER_DRIVEN",
+                    "run_scheduler": "0 sec",
+                    "executionNode": "ALL",
+                    "concurrentlySchedulableTaskCount": 1,
+                    "client_id": "{client_id}",
+                    "runDurationMillis": 0,
+                    "http_name": "InvokeHTTP API DATAMART SEQ5MIN",
+                    "http_method": "GET",
+                    "remote_url": "{url}:{port}/mart/sales/dashboard-sequence-min?sequence=120",
+                    "connection_timeout": "20000 secs",
+                    "read_timeout": "20000 secs",
+                    "max_idle_connection": 1,
+                    "idle-timeout": "10 mins",
+                    "pos_x": 0,
+                    "pos_y": 300,
+                    "on": {
+                        "original": "LogAttribute",
+                        "retry": "LogAttribute",
+                        "failure": "LogAttribute",
+                        "response": "LogAttribute",
+                        "no_retry": "LogAttribute"
+                    }
+                }
+            }
+        },
+        {
+            "group_name": "ETL MART Dashboard Seq120Min - Pandas",
+            "state": "STOPPED",
+            "processor": {
+                "InvokeHTTP": {
+                    "penaltyDuration": "300 sec",
+                    "yieldDuration": "1 sec",
+                    "bulletinLevel": "WARN",
+                    "schedulingStrategy": "TIMER_DRIVEN",
+                    "run_scheduler": "0 sec",
+                    "executionNode": "ALL",
+                    "concurrentlySchedulableTaskCount": 1,
+                    "client_id": "{client_id}",
+                    "runDurationMillis": 0,
+                    "http_name": "InvokeHTTP API DATAMART SEQ5MIN",
+                    "http_method": "GET",
+                    "remote_url": "{url}:{port}/mart/sales/dashboard-sequence-min-pandas?sequence=120",
+                    "connection_timeout": "20000 secs",
+                    "read_timeout": "20000 secs",
+                    "max_idle_connection": 1,
+                    "idle-timeout": "10 mins",
+                    "pos_x": 0,
+                    "pos_y": 300,
+                    "on": {
+                        "original": "LogAttribute",
+                        "retry": "LogAttribute",
+                        "failure": "LogAttribute",
+                        "response": "LogAttribute",
+                        "no_retry": "LogAttribute"
+                    }
+                }
+            }
+        },
+        {
+            "group_name": "ETL MART Dashboard Stream - Kafka",
+            "state": "STOPPED",
+            "processor": {
+                "InvokeHTTP": {
+                    "penaltyDuration": "300 sec",
+                    "yieldDuration": "1 sec",
+                    "bulletinLevel": "WARN",
+                    "schedulingStrategy": "TIMER_DRIVEN",
+                    "run_scheduler": "0 sec",
+                    "executionNode": "ALL",
+                    "concurrentlySchedulableTaskCount": 1,
+                    "client_id": "{client_id}",
+                    "runDurationMillis": 0,
+                    "http_name": "InvokeHTTP API DATAMART KAFKA",
+                    "http_method": "GET",
+                    "remote_url": "{url}:{port}/mart/sales/dashboard-with-kafka?max_message=20000&timeout=5&topic_name=debezium.klopos_prod_etl.klopos.Transactions",
+                    "connection_timeout": "20000 secs",
+                    "read_timeout": "20000 secs",
+                    "max_idle_connection": 1,
+                    "idle-timeout": "10 mins",
+                    "pos_x": 0,
+                    "pos_y": 300,
+                    "on": {
+                        "original": "LogAttribute",
+                        "retry": "LogAttribute",
+                        "failure": "LogAttribute",
+                        "response": "LogAttribute",
+                        "no_retry": "LogAttribute"
+                    }
+                }
+            }
+        },
+        {
+            "group_name": "Validity ETL Dashboard Penjualan",
+            "state": "STOPPED",
+            "processor": {
+                "InvokeHTTP": {
+                    "penaltyDuration": "300 sec",
+                    "yieldDuration": "1 sec",
+                    "bulletinLevel": "WARN",
+                    "schedulingStrategy": "CRON_DRIVEN",
+                    "run_scheduler": "0 0 2 1/1 * ? *",
+                    "executionNode": "ALL",
+                    "concurrentlySchedulableTaskCount": 1,
+                    "client_id": "{client_id}",
+                    "runDurationMillis": 0,
+                    "http_name": "InvokeHTTP API DATAMART SEQ5MIN",
+                    "http_method": "GET",
+                    "remote_url": "{validity_url}/validity/rawmart/dashboard",
+                    "connection_timeout": "20000 secs",
+                    "read_timeout": "20000 secs",
+                    "max_idle_connection": 1,
+                    "idle-timeout": "10 mins",
+                    "pos_x": 0,
+                    "pos_y": 300,
+                    "on": {
+                        "original": "LogAttribute",
+                        "retry": "LogAttribute",
+                        "failure": "LogAttribute",
+                        "response": "LogAttribute",
+                        "no_retry": "LogAttribute"
+                    }
+                }
+            }
+        },
+        {
+            "group_name": "Recovery ETL Dashboard Penjualan",
+            "state": "STOPPED",
+            "processor": {
+                "InvokeHTTP": {
+                    "penaltyDuration": "300 sec",
+                    "yieldDuration": "1 sec",
+                    "bulletinLevel": "WARN",
+                    "schedulingStrategy": "TIMER_DRIVEN",
+                    "run_scheduler": "1 sec",
+                    "executionNode": "ALL",
+                    "concurrentlySchedulableTaskCount": 1,
+                    "client_id": "{client_id}",
+                    "runDurationMillis": 0,
+                    "http_name": "InvokeHTTP API DATAMART SEQ5MIN",
+                    "http_method": "GET",
+                    "remote_url": "{recovery_url}/recovery/rawmart/dashboard",
+                    "connection_timeout": "20000 secs",
+                    "read_timeout": "20000 secs",
+                    "max_idle_connection": 1,
+                    "idle-timeout": "10 mins",
+                    "pos_x": 0,
+                    "pos_y": 300,
+                    "on": {
+                        "original": "LogAttribute",
+                        "retry": "LogAttribute",
+                        "failure": "LogAttribute",
+                        "response": "LogAttribute",
+                        "no_retry": "LogAttribute"
+                    }
+                }
+            }
+        }
+    ]
+}

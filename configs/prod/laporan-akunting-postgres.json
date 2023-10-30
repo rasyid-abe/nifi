@@ -1,0 +1,105 @@
+{
+    "y-axis": 3000,
+    "type" : "postgresql",
+    "configs": [
+        {
+            "group_name": "ETL MART Akunting Seq5Min - Postgres",
+            "state" : "STOPPED",
+            "processor" : {
+                "InvokeHTTP": {
+                        "penaltyDuration": "300 sec",
+                        "yieldDuration": "1 sec",
+                        "bulletinLevel": "WARN",
+                        "schedulingStrategy": "TIMER_DRIVEN",
+                        "run_scheduler": "0 sec",
+                        "executionNode": "ALL",
+                        "concurrentlySchedulableTaskCount": 1,
+                        "client_id": "{client_id}",
+                        "runDurationMillis": 0,
+                        "http_name": "InvokeHTTP API DATAMART SEQ5MIN",
+                        "http_method": "GET",
+                        "remote_url": "{akunting_url_prod}:{akunting_port_prod}/mart/akunting/akunting-sequence-min?sequence=5&size_insert=250&size_delete=250&spec_core=7&driver_memory=3500&executor_memory=12500",
+                        "connection_timeout": "20000 secs",
+                        "read_timeout": "20000 secs",
+                        "max_idle_connection": 1,
+                        "idle-timeout": "10 mins",
+                        "pos_x": 0,
+                        "pos_y": 300,
+                        "on" : {
+                            "original" : "LogAttribute",
+                            "retry" : "LogAttribute",
+                            "failure": "LogAttribute",
+                            "response" : "LogAttribute",
+                            "no_retry" : "LogAttribute"
+                        }
+                    }
+                }
+        },
+        {
+            "group_name": "ETL MART Akunting Seq15Min - Postgres",
+            "state" : "STOPPED",
+            "processor" : {
+                "InvokeHTTP": {
+                        "penaltyDuration": "300 sec",
+                        "yieldDuration": "1 sec",
+                        "bulletinLevel": "WARN",
+                        "schedulingStrategy": "TIMER_DRIVEN",
+                        "run_scheduler": "0 sec",
+                        "executionNode": "ALL",
+                        "concurrentlySchedulableTaskCount": 1,
+                        "client_id": "{client_id}",
+                        "runDurationMillis": 0,
+                        "http_name": "InvokeHTTP API DATAMART SEQ15MIN",
+                        "http_method": "GET",
+                        "remote_url": "{akunting_url_prod}:{akunting_port_prod}/mart/akunting/akunting-sequence-min?sequence=15",
+                        "connection_timeout": "20000 secs",
+                        "read_timeout": "20000 secs",
+                        "max_idle_connection": 1,
+                        "idle-timeout": "10 mins",
+                        "pos_x": 0,
+                        "pos_y": 300,
+                        "on" : {
+                            "original" : "LogAttribute",
+                            "retry" : "LogAttribute",
+                            "failure": "LogAttribute",
+                            "response" : "LogAttribute",
+                            "no_retry" : "LogAttribute"
+                        }
+                    }
+                }
+        },
+        {
+            "group_name": "ETL MART Akunting V2 Seq5Min - Postgres",
+            "state" : "STOPPED",
+            "processor" : {
+                "InvokeHTTP": {
+                        "penaltyDuration": "300 sec",
+                        "yieldDuration": "1 sec",
+                        "bulletinLevel": "WARN",
+                        "schedulingStrategy": "TIMER_DRIVEN",
+                        "run_scheduler": "0 sec",
+                        "executionNode": "ALL",
+                        "concurrentlySchedulableTaskCount": 1,
+                        "client_id": "{client_id}",
+                        "runDurationMillis": 0,
+                        "http_name": "InvokeHTTP API DATAMART SEQ5MIN",
+                        "http_method": "GET",
+                        "remote_url": "{akunting_url_prod}:{akunting_port_prod}/mart/akunting/v2/akunting-sequence-min?sequence=5&is_catching_up=0&size_insert=250&size_delete=250&spec_core=7&driver_memory=3500&executor_memory=12500&delay=600",
+                        "connection_timeout": "20000 secs",
+                        "read_timeout": "20000 secs",
+                        "max_idle_connection": 1,
+                        "idle-timeout": "10 mins",
+                        "pos_x": 0,
+                        "pos_y": 300,
+                        "on" : {
+                            "original" : "LogAttribute",
+                            "retry" : "LogAttribute",
+                            "failure": "LogAttribute",
+                            "response" : "LogAttribute",
+                            "no_retry" : "LogAttribute"
+                        }
+                    }
+                }
+        }
+    ]
+}

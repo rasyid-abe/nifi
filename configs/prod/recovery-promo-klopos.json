@@ -1,0 +1,39 @@
+{
+    "y-axis": 400,
+    "type": "postgresql",
+    "configs": [
+        {
+            "group_name": "Recovery Promo Core - Klopos",
+            "state": "STOPPED",
+            "processor": {
+                "InvokeHTTP": {
+                    "penaltyDuration": "300 sec",
+                    "yieldDuration": "1 sec",
+                    "bulletinLevel": "WARN",
+                    "schedulingStrategy": "TIMER_DRIVEN",
+                    "run_scheduler": "0 sec",
+                    "executionNode": "ALL",
+                    "concurrentlySchedulableTaskCount": 1,
+                    "client_id": "{client_id}",
+                    "runDurationMillis": 0,
+                    "http_name": "InvokeHTTP API DATAMART SEQ5MIN",
+                    "http_method": "GET",
+                    "remote_url": "http://10.128.15.243:8001/mart/recovery/promo-sequence-min?sequence=5&core_spec=7&driver_memory_spec=3500&executor_memory_spec=12500",
+                    "connection_timeout": "20000 secs",
+                    "read_timeout": "20000 secs",
+                    "max_idle_connection": 1,
+                    "idle-timeout": "10 mins",
+                    "pos_x": 0,
+                    "pos_y": 300,
+                    "on": {
+                        "original": "LogAttribute",
+                        "retry": "LogAttribute",
+                        "failure": "LogAttribute",
+                        "response": "LogAttribute",
+                        "no_retry": "LogAttribute"
+                    }
+                }
+            }
+        }
+    ]
+}

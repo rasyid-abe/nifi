@@ -1,0 +1,40 @@
+{
+    "x-axis": 1200,
+    "y-axis": -200,
+    "type" : "postgresql",
+    "configs": [
+        {
+            "group_name": "ETL MART Jurnal Akunting Seq30Min - Postgres",
+            "state" : "STOPPED",
+            "processor" : {
+                "InvokeHTTP": {
+                        "penaltyDuration": "300 sec",
+                        "yieldDuration": "1 sec",
+                        "bulletinLevel": "WARN",
+                        "schedulingStrategy": "TIMER_DRIVEN",
+                        "run_scheduler": "0 sec",
+                        "executionNode": "ALL",
+                        "concurrentlySchedulableTaskCount": 1,
+                        "client_id": "{client_id}",
+                        "runDurationMillis": 0,
+                        "http_name": "InvokeHTTP API DATAMART SEQ30MIN",
+                        "http_method": "GET",
+                        "remote_url": "{akunting_url_beta}:{akunting_port_beta}/mart/akunting/jurnal/jurnal-sequence-min?sequence=30",
+                        "connection_timeout": "20000 secs",
+                        "read_timeout": "20000 secs",
+                        "max_idle_connection": 1,
+                        "idle-timeout": "10 mins",
+                        "pos_x": 0,
+                        "pos_y": 300,
+                        "on" : {
+                            "original" : "LogAttribute",
+                            "retry" : "LogAttribute",
+                            "failure": "LogAttribute",
+                            "response" : "LogAttribute",
+                            "no_retry" : "LogAttribute"
+                        }
+                    }
+                }
+        }
+    ]
+}

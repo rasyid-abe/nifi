@@ -1,0 +1,105 @@
+{
+    "y-axis": 1400,
+    "type": "postgresql",
+    "configs": [
+        {
+            "group_name": "ETL MART Compliment Seq5Min - Postgres",
+            "state": "STOPPED",
+            "processor": {
+                "InvokeHTTP": {
+                    "penaltyDuration": "300 sec",
+                    "yieldDuration": "1 sec",
+                    "bulletinLevel": "WARN",
+                    "schedulingStrategy": "TIMER_DRIVEN",
+                    "run_scheduler": "0 sec",
+                    "executionNode": "ALL",
+                    "concurrentlySchedulableTaskCount": 1,
+                    "client_id": "{client_id}",
+                    "runDurationMillis": 0,
+                    "http_name": "InvokeHTTP API DATAMART SEQ5MIN",
+                    "http_method": "GET",
+                    "remote_url": "{url}:{port}/mart/compliment/compliment-sequence-5min",
+                    "connection_timeout": "20000 secs",
+                    "read_timeout": "20000 secs",
+                    "max_idle_connection": 1,
+                    "idle-timeout": "10 mins",
+                    "pos_x": 0,
+                    "pos_y": 300,
+                    "on": {
+                        "original": "LogAttribute",
+                        "retry": "LogAttribute",
+                        "failure": "LogAttribute",
+                        "response": "LogAttribute",
+                        "no_retry": "LogAttribute"
+                    }
+                }
+            }
+        },
+        {
+            "group_name": "ETL MART Compliment Seq45Min - Postgres",
+            "state": "STOPPED",
+            "processor": {
+                "InvokeHTTP": {
+                    "penaltyDuration": "300 sec",
+                    "yieldDuration": "1 sec",
+                    "bulletinLevel": "WARN",
+                    "schedulingStrategy": "TIMER_DRIVEN",
+                    "run_scheduler": "0 sec",
+                    "executionNode": "ALL",
+                    "concurrentlySchedulableTaskCount": 1,
+                    "client_id": "{client_id}",
+                    "runDurationMillis": 0,
+                    "http_name": "InvokeHTTP API DATAMART SEQ5MIN",
+                    "http_method": "GET",
+                    "remote_url": "{url}:{port}/mart/compliment/compliment-sequence-45min",
+                    "connection_timeout": "20000 secs",
+                    "read_timeout": "20000 secs",
+                    "max_idle_connection": 1,
+                    "idle-timeout": "10 mins",
+                    "pos_x": 0,
+                    "pos_y": 300,
+                    "on": {
+                        "original": "LogAttribute",
+                        "retry": "LogAttribute",
+                        "failure": "LogAttribute",
+                        "response": "LogAttribute",
+                        "no_retry": "LogAttribute"
+                    }
+                }
+            }
+        },
+        {
+            "group_name": "ETL MART Compliment Seq120Min - Postgres",
+            "state": "STOPPED",
+            "processor": {
+                "InvokeHTTP": {
+                    "penaltyDuration": "300 sec",
+                    "yieldDuration": "1 sec",
+                    "bulletinLevel": "WARN",
+                    "schedulingStrategy": "TIMER_DRIVEN",
+                    "run_scheduler": "0 sec",
+                    "executionNode": "ALL",
+                    "concurrentlySchedulableTaskCount": 1,
+                    "client_id": "{client_id}",
+                    "runDurationMillis": 0,
+                    "http_name": "InvokeHTTP API DATAMART SEQ5MIN",
+                    "http_method": "GET",
+                    "remote_url": "{url}:{port}/mart/compliment/compliment-sequence-120min",
+                    "connection_timeout": "20000 secs",
+                    "read_timeout": "20000 secs",
+                    "max_idle_connection": 1,
+                    "idle-timeout": "10 mins",
+                    "pos_x": 0,
+                    "pos_y": 300,
+                    "on": {
+                        "original": "LogAttribute",
+                        "retry": "LogAttribute",
+                        "failure": "LogAttribute",
+                        "response": "LogAttribute",
+                        "no_retry": "LogAttribute"
+                    }
+                }
+            }
+        }
+    ]
+}

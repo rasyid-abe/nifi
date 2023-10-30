@@ -1,0 +1,369 @@
+{
+    "y-axis": -400,
+    "type": "postgresql",
+    "configs": [
+        {
+            "group_name": "RECOVERY Mart Varian",
+            "state": "STOPPED",
+            "processor": {
+                "InvokeHTTP": {
+                    "penaltyDuration": "300 sec",
+                    "yieldDuration": "1 sec",
+                    "bulletinLevel": "WARN",
+                    "schedulingStrategy": "TIMER_DRIVEN",
+                    "run_scheduler": "1 sec",
+                    "executionNode": "ALL",
+                    "concurrentlySchedulableTaskCount": 1,
+                    "client_id": "{client_id}",
+                    "runDurationMillis": 0,
+                    "http_name": "InvokeHTTP API Recovery Varian",
+                    "http_method": "GET",
+                    "remote_url": "{recovery_url}/recovery/rawmart/varian",
+                    "connection_timeout": "20000 secs",
+                    "read_timeout": "20000 secs",
+                    "max_idle_connection": 1,
+                    "idle-timeout": "10 mins",
+                    "pos_x": 0,
+                    "pos_y": 300,
+                    "on": {
+                        "original": "LogAttribute",
+                        "retry": "LogAttribute",
+                        "failure": "LogAttribute",
+                        "response": "LogAttribute",
+                        "no_retry": "LogAttribute"
+                    }
+                }
+            }
+        },
+        {
+            "group_name": "RECOVERY Mart Sub Varian",
+            "state": "STOPPED",
+            "processor": {
+                "InvokeHTTP": {
+                    "penaltyDuration": "300 sec",
+                    "yieldDuration": "1 sec",
+                    "bulletinLevel": "WARN",
+                    "schedulingStrategy": "TIMER_DRIVEN",
+                    "run_scheduler": "1 sec",
+                    "executionNode": "ALL",
+                    "concurrentlySchedulableTaskCount": 1,
+                    "client_id": "{client_id}",
+                    "runDurationMillis": 0,
+                    "http_name": "InvokeHTTP API Recovery Sub Varian",
+                    "http_method": "GET",
+                    "remote_url": "{recovery_url}/recovery/rawmart/sub_varian",
+                    "connection_timeout": "20000 secs",
+                    "read_timeout": "20000 secs",
+                    "max_idle_connection": 1,
+                    "idle-timeout": "10 mins",
+                    "pos_x": 0,
+                    "pos_y": 300,
+                    "on": {
+                        "original": "LogAttribute",
+                        "retry": "LogAttribute",
+                        "failure": "LogAttribute",
+                        "response": "LogAttribute",
+                        "no_retry": "LogAttribute"
+                    }
+                }
+            }
+        },
+        {
+            "group_name": "RECOVERY Mart Produk",
+            "state": "STOPPED",
+            "processor": {
+                "InvokeHTTP": {
+                    "penaltyDuration": "300 sec",
+                    "yieldDuration": "1 sec",
+                    "bulletinLevel": "WARN",
+                    "schedulingStrategy": "TIMER_DRIVEN",
+                    "run_scheduler": "1 sec",
+                    "executionNode": "ALL",
+                    "concurrentlySchedulableTaskCount": 1,
+                    "client_id": "{client_id}",
+                    "runDurationMillis": 0,
+                    "http_name": "InvokeHTTP API Recovery Produk",
+                    "http_method": "GET",
+                    "remote_url": "{recovery_url}/recovery/rawmart/produk",
+                    "connection_timeout": "20000 secs",
+                    "read_timeout": "20000 secs",
+                    "max_idle_connection": 1,
+                    "idle-timeout": "10 mins",
+                    "pos_x": 0,
+                    "pos_y": 300,
+                    "on": {
+                        "original": "LogAttribute",
+                        "retry": "LogAttribute",
+                        "failure": "LogAttribute",
+                        "response": "LogAttribute",
+                        "no_retry": "LogAttribute"
+                    }
+                }
+            }
+        },
+        {
+            "group_name": "RECOVERY Mart Akunting",
+            "state": "STOPPED",
+            "processor": {
+                "InvokeHTTP": {
+                    "penaltyDuration": "300 sec",
+                    "yieldDuration": "1 sec",
+                    "bulletinLevel": "WARN",
+                    "schedulingStrategy": "TIMER_DRIVEN",
+                    "run_scheduler": "1 sec",
+                    "executionNode": "ALL",
+                    "concurrentlySchedulableTaskCount": 1,
+                    "client_id": "{client_id}",
+                    "runDurationMillis": 0,
+                    "http_name": "InvokeHTTP API Recovery Akunting",
+                    "http_method": "GET",
+                    "remote_url": "{recovery_url}/recovery/rawmart/akunting",
+                    "connection_timeout": "20000 secs",
+                    "read_timeout": "20000 secs",
+                    "max_idle_connection": 1,
+                    "idle-timeout": "10 mins",
+                    "pos_x": 0,
+                    "pos_y": 300,
+                    "on": {
+                        "original": "LogAttribute",
+                        "retry": "LogAttribute",
+                        "failure": "LogAttribute",
+                        "response": "LogAttribute",
+                        "no_retry": "LogAttribute"
+                    }
+                }
+            }
+        },
+        {
+            "group_name": "RECOVERY Mart Busiest Item Time",
+            "state": "STOPPED",
+            "processor": {
+                "InvokeHTTP": {
+                    "penaltyDuration": "300 sec",
+                    "yieldDuration": "1 sec",
+                    "bulletinLevel": "WARN",
+                    "schedulingStrategy": "TIMER_DRIVEN",
+                    "run_scheduler": "1 sec",
+                    "executionNode": "ALL",
+                    "concurrentlySchedulableTaskCount": 1,
+                    "client_id": "{client_id}",
+                    "runDurationMillis": 0,
+                    "http_name": "InvokeHTTP API Recovery Busiest Item Time",
+                    "http_method": "GET",
+                    "remote_url": "{recovery_url}/recovery/rawmart/busiest_item_time",
+                    "connection_timeout": "20000 secs",
+                    "read_timeout": "20000 secs",
+                    "max_idle_connection": 1,
+                    "idle-timeout": "10 mins",
+                    "pos_x": 0,
+                    "pos_y": 300,
+                    "on": {
+                        "original": "LogAttribute",
+                        "retry": "LogAttribute",
+                        "failure": "LogAttribute",
+                        "response": "LogAttribute",
+                        "no_retry": "LogAttribute"
+                    }
+                }
+            }
+        },
+        {
+            "group_name": "RECOVERY Mart Compliment",
+            "state": "STOPPED",
+            "processor": {
+                "InvokeHTTP": {
+                    "penaltyDuration": "300 sec",
+                    "yieldDuration": "1 sec",
+                    "bulletinLevel": "WARN",
+                    "schedulingStrategy": "TIMER_DRIVEN",
+                    "run_scheduler": "1 sec",
+                    "executionNode": "ALL",
+                    "concurrentlySchedulableTaskCount": 1,
+                    "client_id": "{client_id}",
+                    "runDurationMillis": 0,
+                    "http_name": "InvokeHTTP API Recovery Compliment",
+                    "http_method": "GET",
+                    "remote_url": "{recovery_url}/recovery/rawmart/compliment",
+                    "connection_timeout": "20000 secs",
+                    "read_timeout": "20000 secs",
+                    "max_idle_connection": 1,
+                    "idle-timeout": "10 mins",
+                    "pos_x": 0,
+                    "pos_y": 300,
+                    "on": {
+                        "original": "LogAttribute",
+                        "retry": "LogAttribute",
+                        "failure": "LogAttribute",
+                        "response": "LogAttribute",
+                        "no_retry": "LogAttribute"
+                    }
+                }
+            }
+        },
+        {
+            "group_name": "RECOVERY Mart Outlet Sales",
+            "state": "STOPPED",
+            "processor": {
+                "InvokeHTTP": {
+                    "penaltyDuration": "300 sec",
+                    "yieldDuration": "1 sec",
+                    "bulletinLevel": "WARN",
+                    "schedulingStrategy": "TIMER_DRIVEN",
+                    "run_scheduler": "1 sec",
+                    "executionNode": "ALL",
+                    "concurrentlySchedulableTaskCount": 1,
+                    "client_id": "{client_id}",
+                    "runDurationMillis": 0,
+                    "http_name": "InvokeHTTP API Recovery Outlet Sales",
+                    "http_method": "GET",
+                    "remote_url": "{recovery_url}/recovery/rawmart/outlet_sales",
+                    "connection_timeout": "20000 secs",
+                    "read_timeout": "20000 secs",
+                    "max_idle_connection": 1,
+                    "idle-timeout": "10 mins",
+                    "pos_x": 0,
+                    "pos_y": 300,
+                    "on": {
+                        "original": "LogAttribute",
+                        "retry": "LogAttribute",
+                        "failure": "LogAttribute",
+                        "response": "LogAttribute",
+                        "no_retry": "LogAttribute"
+                    }
+                }
+            }
+        },
+        {
+            "group_name": "RECOVERY Mart Product Sales",
+            "state": "STOPPED",
+            "processor": {
+                "InvokeHTTP": {
+                    "penaltyDuration": "300 sec",
+                    "yieldDuration": "1 sec",
+                    "bulletinLevel": "WARN",
+                    "schedulingStrategy": "TIMER_DRIVEN",
+                    "run_scheduler": "1 sec",
+                    "executionNode": "ALL",
+                    "concurrentlySchedulableTaskCount": 1,
+                    "client_id": "{client_id}",
+                    "runDurationMillis": 0,
+                    "http_name": "InvokeHTTP API Recovery Product Sales",
+                    "http_method": "GET",
+                    "remote_url": "{recovery_url}/recovery/rawmart/product_sales",
+                    "connection_timeout": "20000 secs",
+                    "read_timeout": "20000 secs",
+                    "max_idle_connection": 1,
+                    "idle-timeout": "10 mins",
+                    "pos_x": 0,
+                    "pos_y": 300,
+                    "on": {
+                        "original": "LogAttribute",
+                        "retry": "LogAttribute",
+                        "failure": "LogAttribute",
+                        "response": "LogAttribute",
+                        "no_retry": "LogAttribute"
+                    }
+                }
+            }
+        },
+        {
+            "group_name": "RECOVERY Mart Summary Reservation",
+            "state": "STOPPED",
+            "processor": {
+                "InvokeHTTP": {
+                    "penaltyDuration": "300 sec",
+                    "yieldDuration": "1 sec",
+                    "bulletinLevel": "WARN",
+                    "schedulingStrategy": "TIMER_DRIVEN",
+                    "run_scheduler": "1 sec",
+                    "executionNode": "ALL",
+                    "concurrentlySchedulableTaskCount": 1,
+                    "client_id": "{client_id}",
+                    "runDurationMillis": 0,
+                    "http_name": "InvokeHTTP API Recovery Summary Reservation",
+                    "http_method": "GET",
+                    "remote_url": "{recovery_url}/recovery/rawmart/summary_reservation",
+                    "connection_timeout": "20000 secs",
+                    "read_timeout": "20000 secs",
+                    "max_idle_connection": 1,
+                    "idle-timeout": "10 mins",
+                    "pos_x": 0,
+                    "pos_y": 300,
+                    "on": {
+                        "original": "LogAttribute",
+                        "retry": "LogAttribute",
+                        "failure": "LogAttribute",
+                        "response": "LogAttribute",
+                        "no_retry": "LogAttribute"
+                    }
+                }
+            }
+        },
+        {
+            "group_name": "RECOVERY Mart Transaction Type",
+            "state": "STOPPED",
+            "processor": {
+                "InvokeHTTP": {
+                    "penaltyDuration": "300 sec",
+                    "yieldDuration": "1 sec",
+                    "bulletinLevel": "WARN",
+                    "schedulingStrategy": "TIMER_DRIVEN",
+                    "run_scheduler": "1 sec",
+                    "executionNode": "ALL",
+                    "concurrentlySchedulableTaskCount": 1,
+                    "client_id": "{client_id}",
+                    "runDurationMillis": 0,
+                    "http_name": "InvokeHTTP API Recovery Transaction Type",
+                    "http_method": "GET",
+                    "remote_url": "{recovery_url}/recovery/rawmart/transaction_type",
+                    "connection_timeout": "20000 secs",
+                    "read_timeout": "20000 secs",
+                    "max_idle_connection": 1,
+                    "idle-timeout": "10 mins",
+                    "pos_x": 0,
+                    "pos_y": 300,
+                    "on": {
+                        "original": "LogAttribute",
+                        "retry": "LogAttribute",
+                        "failure": "LogAttribute",
+                        "response": "LogAttribute",
+                        "no_retry": "LogAttribute"
+                    }
+                }
+            }
+        },
+        {
+            "group_name": "RECOVERY Mart Utilization",
+            "state": "STOPPED",
+            "processor": {
+                "InvokeHTTP": {
+                    "penaltyDuration": "300 sec",
+                    "yieldDuration": "1 sec",
+                    "bulletinLevel": "WARN",
+                    "schedulingStrategy": "TIMER_DRIVEN",
+                    "run_scheduler": "1 sec",
+                    "executionNode": "ALL",
+                    "concurrentlySchedulableTaskCount": 1,
+                    "client_id": "{client_id}",
+                    "runDurationMillis": 0,
+                    "http_name": "InvokeHTTP API Recovery Utilization",
+                    "http_method": "GET",
+                    "remote_url": "{recovery_url}/recovery/rawmart/utilization",
+                    "connection_timeout": "20000 secs",
+                    "read_timeout": "20000 secs",
+                    "max_idle_connection": 1,
+                    "idle-timeout": "10 mins",
+                    "pos_x": 0,
+                    "pos_y": 300,
+                    "on": {
+                        "original": "LogAttribute",
+                        "retry": "LogAttribute",
+                        "failure": "LogAttribute",
+                        "response": "LogAttribute",
+                        "no_retry": "LogAttribute"
+                    }
+                }
+            }
+        }
+    ]
+}

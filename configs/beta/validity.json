@@ -1,0 +1,402 @@
+{
+    "y-axis": -600,
+    "type": "postgresql",
+    "configs": [
+        {
+            "group_name": "VALIDITY Mart Varian",
+            "state": "RUNNING",
+            "processor": {
+                "InvokeHTTP": {
+                    "penaltyDuration": "300 sec",
+                    "yieldDuration": "1 sec",
+                    "bulletinLevel": "WARN",
+                    "schedulingStrategy": "CRON_DRIVEN",
+                    "run_scheduler": "0 0 2 1/1 * ? *",
+                    "executionNode": "ALL",
+                    "concurrentlySchedulableTaskCount": 1,
+                    "client_id": "{client_id}",
+                    "runDurationMillis": 0,
+                    "http_name": "InvokeHTTP API Validity Varian",
+                    "http_method": "GET",
+                    "remote_url": "{validity_url}/validity/rawmart/varian",
+                    "connection_timeout": "20000 secs",
+                    "read_timeout": "20000 secs",
+                    "max_idle_connection": 1,
+                    "idle-timeout": "10 mins",
+                    "pos_x": 0,
+                    "pos_y": 300,
+                    "on": {
+                        "original": "LogAttribute",
+                        "retry": "LogAttribute",
+                        "failure": "LogAttribute",
+                        "response": "LogAttribute",
+                        "no_retry": "LogAttribute"
+                    }
+                }
+            }
+        },
+        {
+            "group_name": "VALIDITY Mart Sub Varian",
+            "state": "RUNNING",
+            "processor": {
+                "InvokeHTTP": {
+                    "penaltyDuration": "300 sec",
+                    "yieldDuration": "1 sec",
+                    "bulletinLevel": "WARN",
+                    "schedulingStrategy": "CRON_DRIVEN",
+                    "run_scheduler": "0 0 2 1/1 * ? *",
+                    "executionNode": "ALL",
+                    "concurrentlySchedulableTaskCount": 1,
+                    "client_id": "{client_id}",
+                    "runDurationMillis": 0,
+                    "http_name": "InvokeHTTP API Validity Sub Varian",
+                    "http_method": "GET",
+                    "remote_url": "{validity_url}/validity/rawmart/sub_varian",
+                    "connection_timeout": "20000 secs",
+                    "read_timeout": "20000 secs",
+                    "max_idle_connection": 1,
+                    "idle-timeout": "10 mins",
+                    "pos_x": 0,
+                    "pos_y": 300,
+                    "on": {
+                        "original": "LogAttribute",
+                        "retry": "LogAttribute",
+                        "failure": "LogAttribute",
+                        "response": "LogAttribute",
+                        "no_retry": "LogAttribute"
+                    }
+                }
+            }
+        },
+        {
+            "group_name": "VALIDITY Mart Produk",
+            "state": "RUNNING",
+            "processor": {
+                "InvokeHTTP": {
+                    "penaltyDuration": "300 sec",
+                    "yieldDuration": "1 sec",
+                    "bulletinLevel": "WARN",
+                    "schedulingStrategy": "CRON_DRIVEN",
+                    "run_scheduler": "0 0 2 1/1 * ? *",
+                    "executionNode": "ALL",
+                    "concurrentlySchedulableTaskCount": 1,
+                    "client_id": "{client_id}",
+                    "runDurationMillis": 0,
+                    "http_name": "InvokeHTTP API Validity Produk",
+                    "http_method": "GET",
+                    "remote_url": "{validity_url}/validity/rawmart/produk",
+                    "connection_timeout": "20000 secs",
+                    "read_timeout": "20000 secs",
+                    "max_idle_connection": 1,
+                    "idle-timeout": "10 mins",
+                    "pos_x": 0,
+                    "pos_y": 300,
+                    "on": {
+                        "original": "LogAttribute",
+                        "retry": "LogAttribute",
+                        "failure": "LogAttribute",
+                        "response": "LogAttribute",
+                        "no_retry": "LogAttribute"
+                    }
+                }
+            }
+        },
+        {
+            "group_name": "VALIDITY Mart Akunting",
+            "state": "RUNNING",
+            "processor": {
+                "InvokeHTTP": {
+                    "penaltyDuration": "300 sec",
+                    "yieldDuration": "1 sec",
+                    "bulletinLevel": "WARN",
+                    "schedulingStrategy": "CRON_DRIVEN",
+                    "run_scheduler": "0 0 2 1/1 * ? *",
+                    "executionNode": "ALL",
+                    "concurrentlySchedulableTaskCount": 1,
+                    "client_id": "{client_id}",
+                    "runDurationMillis": 0,
+                    "http_name": "InvokeHTTP API Validity Akunting",
+                    "http_method": "GET",
+                    "remote_url": "{validity_url}/validity/rawmart/akunting",
+                    "connection_timeout": "20000 secs",
+                    "read_timeout": "20000 secs",
+                    "max_idle_connection": 1,
+                    "idle-timeout": "10 mins",
+                    "pos_x": 0,
+                    "pos_y": 300,
+                    "on": {
+                        "original": "LogAttribute",
+                        "retry": "LogAttribute",
+                        "failure": "LogAttribute",
+                        "response": "LogAttribute",
+                        "no_retry": "LogAttribute"
+                    }
+                }
+            }
+        },
+        {
+            "group_name": "VALIDITY CDC",
+            "state": "RUNNING",
+            "processor": {
+                "InvokeHTTP": {
+                    "penaltyDuration": "300 sec",
+                    "yieldDuration": "1 sec",
+                    "bulletinLevel": "WARN",
+                    "schedulingStrategy": "CRON_DRIVEN",
+                    "run_scheduler": "0 0 2 1/1 * ? *",
+                    "executionNode": "ALL",
+                    "concurrentlySchedulableTaskCount": 1,
+                    "client_id": "{client_id}",
+                    "runDurationMillis": 0,
+                    "http_name": "InvokeHTTP API Validity CDC",
+                    "http_method": "GET",
+                    "remote_url": "{validity_url}/validity/rawmart/cdc",
+                    "connection_timeout": "20000 secs",
+                    "read_timeout": "20000 secs",
+                    "max_idle_connection": 1,
+                    "idle-timeout": "10 mins",
+                    "pos_x": 0,
+                    "pos_y": 300,
+                    "on": {
+                        "original": "LogAttribute",
+                        "retry": "LogAttribute",
+                        "failure": "LogAttribute",
+                        "response": "LogAttribute",
+                        "no_retry": "LogAttribute"
+                    }
+                }
+            }
+        },
+        {
+            "group_name": "VALIDITY Mart Busiest Item Time",
+            "state": "RUNNING",
+            "processor": {
+                "InvokeHTTP": {
+                    "penaltyDuration": "300 sec",
+                    "yieldDuration": "1 sec",
+                    "bulletinLevel": "WARN",
+                    "schedulingStrategy": "CRON_DRIVEN",
+                    "run_scheduler": "0 0 2 1/1 * ? *",
+                    "executionNode": "ALL",
+                    "concurrentlySchedulableTaskCount": 1,
+                    "client_id": "{client_id}",
+                    "runDurationMillis": 0,
+                    "http_name": "InvokeHTTP API Validity Busiest Item Time",
+                    "http_method": "GET",
+                    "remote_url": "{validity_url}/validity/rawmart/busiest_item_time",
+                    "connection_timeout": "20000 secs",
+                    "read_timeout": "20000 secs",
+                    "max_idle_connection": 1,
+                    "idle-timeout": "10 mins",
+                    "pos_x": 0,
+                    "pos_y": 300,
+                    "on": {
+                        "original": "LogAttribute",
+                        "retry": "LogAttribute",
+                        "failure": "LogAttribute",
+                        "response": "LogAttribute",
+                        "no_retry": "LogAttribute"
+                    }
+                }
+            }
+        },
+        {
+            "group_name": "VALIDITY Mart Compliment",
+            "state": "RUNNING",
+            "processor": {
+                "InvokeHTTP": {
+                    "penaltyDuration": "300 sec",
+                    "yieldDuration": "1 sec",
+                    "bulletinLevel": "WARN",
+                    "schedulingStrategy": "CRON_DRIVEN",
+                    "run_scheduler": "0 0 2 1/1 * ? *",
+                    "executionNode": "ALL",
+                    "concurrentlySchedulableTaskCount": 1,
+                    "client_id": "{client_id}",
+                    "runDurationMillis": 0,
+                    "http_name": "InvokeHTTP API Validity Compliment",
+                    "http_method": "GET",
+                    "remote_url": "{validity_url}/validity/rawmart/compliment",
+                    "connection_timeout": "20000 secs",
+                    "read_timeout": "20000 secs",
+                    "max_idle_connection": 1,
+                    "idle-timeout": "10 mins",
+                    "pos_x": 0,
+                    "pos_y": 300,
+                    "on": {
+                        "original": "LogAttribute",
+                        "retry": "LogAttribute",
+                        "failure": "LogAttribute",
+                        "response": "LogAttribute",
+                        "no_retry": "LogAttribute"
+                    }
+                }
+            }
+        },
+        {
+            "group_name": "VALIDITY Mart Outlet Sales",
+            "state": "RUNNING",
+            "processor": {
+                "InvokeHTTP": {
+                    "penaltyDuration": "300 sec",
+                    "yieldDuration": "1 sec",
+                    "bulletinLevel": "WARN",
+                    "schedulingStrategy": "CRON_DRIVEN",
+                    "run_scheduler": "0 0 2 1/1 * ? *",
+                    "executionNode": "ALL",
+                    "concurrentlySchedulableTaskCount": 1,
+                    "client_id": "{client_id}",
+                    "runDurationMillis": 0,
+                    "http_name": "InvokeHTTP API Validity Outlet Sales",
+                    "http_method": "GET",
+                    "remote_url": "{validity_url}/validity/rawmart/outlet_sales",
+                    "connection_timeout": "20000 secs",
+                    "read_timeout": "20000 secs",
+                    "max_idle_connection": 1,
+                    "idle-timeout": "10 mins",
+                    "pos_x": 0,
+                    "pos_y": 300,
+                    "on": {
+                        "original": "LogAttribute",
+                        "retry": "LogAttribute",
+                        "failure": "LogAttribute",
+                        "response": "LogAttribute",
+                        "no_retry": "LogAttribute"
+                    }
+                }
+            }
+        },
+        {
+            "group_name": "VALIDITY Mart Product Sales",
+            "state": "RUNNING",
+            "processor": {
+                "InvokeHTTP": {
+                    "penaltyDuration": "300 sec",
+                    "yieldDuration": "1 sec",
+                    "bulletinLevel": "WARN",
+                    "schedulingStrategy": "CRON_DRIVEN",
+                    "run_scheduler": "0 0 2 1/1 * ? *",
+                    "executionNode": "ALL",
+                    "concurrentlySchedulableTaskCount": 1,
+                    "client_id": "{client_id}",
+                    "runDurationMillis": 0,
+                    "http_name": "InvokeHTTP API Validity Product Sales",
+                    "http_method": "GET",
+                    "remote_url": "{validity_url}/validity/rawmart/product_sales",
+                    "connection_timeout": "20000 secs",
+                    "read_timeout": "20000 secs",
+                    "max_idle_connection": 1,
+                    "idle-timeout": "10 mins",
+                    "pos_x": 0,
+                    "pos_y": 300,
+                    "on": {
+                        "original": "LogAttribute",
+                        "retry": "LogAttribute",
+                        "failure": "LogAttribute",
+                        "response": "LogAttribute",
+                        "no_retry": "LogAttribute"
+                    }
+                }
+            }
+        },
+        {
+            "group_name": "VALIDITY Mart Summary Reservation",
+            "state": "RUNNING",
+            "processor": {
+                "InvokeHTTP": {
+                    "penaltyDuration": "300 sec",
+                    "yieldDuration": "1 sec",
+                    "bulletinLevel": "WARN",
+                    "schedulingStrategy": "CRON_DRIVEN",
+                    "run_scheduler": "0 0 2 1/1 * ? *",
+                    "executionNode": "ALL",
+                    "concurrentlySchedulableTaskCount": 1,
+                    "client_id": "{client_id}",
+                    "runDurationMillis": 0,
+                    "http_name": "InvokeHTTP API Validity Summary Reservation",
+                    "http_method": "GET",
+                    "remote_url": "{validity_url}/validity/rawmart/summary_reservation",
+                    "connection_timeout": "20000 secs",
+                    "read_timeout": "20000 secs",
+                    "max_idle_connection": 1,
+                    "idle-timeout": "10 mins",
+                    "pos_x": 0,
+                    "pos_y": 300,
+                    "on": {
+                        "original": "LogAttribute",
+                        "retry": "LogAttribute",
+                        "failure": "LogAttribute",
+                        "response": "LogAttribute",
+                        "no_retry": "LogAttribute"
+                    }
+                }
+            }
+        },
+        {
+            "group_name": "VALIDITY Mart Transaction Type",
+            "state": "RUNNING",
+            "processor": {
+                "InvokeHTTP": {
+                    "penaltyDuration": "300 sec",
+                    "yieldDuration": "1 sec",
+                    "bulletinLevel": "WARN",
+                    "schedulingStrategy": "CRON_DRIVEN",
+                    "run_scheduler": "0 0 2 1/1 * ? *",
+                    "executionNode": "ALL",
+                    "concurrentlySchedulableTaskCount": 1,
+                    "client_id": "{client_id}",
+                    "runDurationMillis": 0,
+                    "http_name": "InvokeHTTP API Validity Transaction Type",
+                    "http_method": "GET",
+                    "remote_url": "{validity_url}/validity/rawmart/transaction_type",
+                    "connection_timeout": "20000 secs",
+                    "read_timeout": "20000 secs",
+                    "max_idle_connection": 1,
+                    "idle-timeout": "10 mins",
+                    "pos_x": 0,
+                    "pos_y": 300,
+                    "on": {
+                        "original": "LogAttribute",
+                        "retry": "LogAttribute",
+                        "failure": "LogAttribute",
+                        "response": "LogAttribute",
+                        "no_retry": "LogAttribute"
+                    }
+                }
+            }
+        },
+        {
+            "group_name": "VALIDITY Mart Utilization",
+            "state": "RUNNING",
+            "processor": {
+                "InvokeHTTP": {
+                    "penaltyDuration": "300 sec",
+                    "yieldDuration": "1 sec",
+                    "bulletinLevel": "WARN",
+                    "schedulingStrategy": "CRON_DRIVEN",
+                    "run_scheduler": "0 0 2 1/1 * ? *",
+                    "executionNode": "ALL",
+                    "concurrentlySchedulableTaskCount": 1,
+                    "client_id": "{client_id}",
+                    "runDurationMillis": 0,
+                    "http_name": "InvokeHTTP API Validity Utilization",
+                    "http_method": "GET",
+                    "remote_url": "{validity_url}/validity/rawmart/utilization",
+                    "connection_timeout": "20000 secs",
+                    "read_timeout": "20000 secs",
+                    "max_idle_connection": 1,
+                    "idle-timeout": "10 mins",
+                    "pos_x": 0,
+                    "pos_y": 300,
+                    "on": {
+                        "original": "LogAttribute",
+                        "retry": "LogAttribute",
+                        "failure": "LogAttribute",
+                        "response": "LogAttribute",
+                        "no_retry": "LogAttribute"
+                    }
+                }
+            }
+        }
+    ]
+}
